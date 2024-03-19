@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выставка Верховный суд КЧР</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="backButton">
+            <a href="../pages/sudii_veterany_vov.html">
+                <img src="../ref/arrow_back.png" alt="">
+            </a>
+        </div>
+        <div class="title"></div>
+
+        <div class="main_info">
+            <div class="predsedatel"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const paramValue = urlParams.get('id');
+
+        fetch('../js/veterany.json')
+            .then(response => response.text())
+            .then(info => {
+                let data = JSON.parse(info);
+
+                $(".predsedatel").append(`
+                    <div class="predsedatel_left">
+                        <div class="predsedatel_left__img">
+                            <img src="../ref/${data[paramValue].picture}" alt="">
+                        </div>
+                        <div class="predsedatel_left__title">${data[paramValue].title}</div>
+                        <div class="predsedatel_left__description">${data[paramValue].description}</div>
+                    </div>
+                    <div class="predsedatel_right">${data[paramValue].text}</div>
+                `);
+            })
+            .catch(error => console.error('Error fetching data:', error));
+
+    </script>
+</body>
+
+</html>
