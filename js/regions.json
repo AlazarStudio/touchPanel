@@ -1,47 +1,35 @@
 [
     {
-        "title": "2 Всероссийский съезд судей (17-18 октября 1991 года)",
-        "text": "съезд 2 текст",
-        "slider": ["slide1.jpg", "slide2.jpg", "slide3.jpg"]
-    },
-    {
-        "title": "3 Всероссийский съезд судей (17-18 октября 1991 года)",
-        "text": "съезд 3 текст",
-        "slider": ["slide1.jpg", "slide2.jpg", "slide3.jpg"]
-    },
-    {
-        "title": "4 Всероссийский съезд судей (17-18 октября 1991 года)",
-        "text": "съезд 4 текст",
-        "slider": ["slide1.jpg", "slide2.jpg", "slide3.jpg"]
-    },
-    {
-        "title": "5 Всероссийский съезд судей (17-18 октября 1991 года)",
-        "text": "съезд 5 текст",
-        "slider": ["slide1.jpg", "slide2.jpg", "slide3.jpg"]
-    },
-    {
-        "title": "6 Всероссийский съезд судей (17-18 октября 1991 года)",
-        "text": "съезд 6 текст",
-        "slider": ["slide1.jpg", "slide2.jpg", "slide3.jpg"]
-    },
-    {
-        "title": "7 Всероссийский съезд судей (17-18 октября 1991 года)",
-        "text": "съезд 7 текст",
-        "slider": ["slide1.jpg", "slide2.jpg", "slide3.jpg"]
-    },
-    {
-        "title": "8 Всероссийский съезд судей (17-18 октября 1991 года)",
-        "text": "съезд 8 текст",
-        "slider": ["slide1.jpg", "slide2.jpg", "slide3.jpg"]
-    },
-    {
-        "title": "9 Всероссийский съезд судей (17-18 октября 1991 года)",
-        "text": "съезд 9 текст",
-        "slider": ["slide1.jpg", "slide2.jpg", "slide3.jpg"]
-    },
-    {
-        "title": "10 Всероссийский съезд судей (17-18 октября 1991 года)",
-        "text": "съезд 10 текст",
-        "slider": ["slide1.jpg", "slide2.jpg", "slide3.jpg"]
+        "id": "г. Черкесск",
+        "title": "Черкесский городской суд",
+        "topPicture": "reg_topPicture_1.png",
+        "text": "г. Черкесск текст",
+        "slider": [
+            "slider1_reg_sud_galery_slide1.png", 
+            "slider1_reg_sud_galery_slide2.png", 
+            "slider1_reg_sud_galery_slide3.png"
+        ],
+        "predsedatels": [
+            {
+                "title": "Лепшоков Науруз Абрекович",
+                "picture": "reg_pred_1.png"
+            },
+            {
+                "title": "Жолудев Иван Степанович",
+                "picture": "reg_pred_2.png"
+            },
+            {
+                "title": "Бадалов Илгар Намазович",
+                "picture": "reg_pred_3.png"
+            },
+            {
+                "title": "Привалова Наталья Алексеевна",
+                "picture": "reg_pred_4.png"
+            },
+            {
+                "title": "Супрунов Виктор Михайлович",
+                "picture": "reg_pred_5.png"
+            }
+        ]
     }
 ]
