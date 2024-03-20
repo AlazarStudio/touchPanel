@@ -1,0 +1,614 @@
+@keyframes mark-slide {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+
+  50% {
+    transform: translateX(0) translateY(-150px);
+  }
+
+  100% {
+    transform: translateX(150px) translateY(-150px);
+  }
+}
+
+@keyframes text-slide {
+  0% {
+    opacity: 0;
+    transform: translateX(35px) translateY(-200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(35px) translateY(-230px);
+  }
+}
+
+@keyframes line-draw {
+  0% {
+    height: 0;
+    transform: translateX(4px) translateY(0);
+  }
+
+  50% {
+    height: 150px;
+    transform: translateX(4px) translateY(-150px);
+  }
+
+  100% {
+    height: 150px;
+    transform: translateX(4px) translateY(-150px);
+  }
+}
+
+@keyframes line2-draw {
+  0% {
+    width: 0;
+    transform: translateX(4px) translateY(0);
+  }
+
+  50% {
+    width: 0;
+    transform: translateX(4px) translateY(-300px);
+  }
+
+  100% {
+    width: 150px;
+    transform: translateX(4px) translateY(-300px);
+  }
+}
+
+@keyframes lines-draw {
+  0% {
+    width: 0;
+    transform: translateX(4px) translateY(4px);
+  }
+
+  50% {
+    width: 0;
+    transform: translateX(4px) translateY(4px);
+  }
+
+  100% {
+    width: 400px;
+    transform: translateX(4px) translateY(4px);
+  }
+}
+
+/* ------------------------------------------------------------------------------ */
+
+/* mark_prikub right*/
+
+@keyframes mark_prikub-lines-draw {
+  0% {
+    width: 0;
+    transform: translateX(4px) translateY(4px);
+  }
+
+  50% {
+    width: 0;
+    transform: translateX(4px) translateY(4px);
+  }
+
+  100% {
+    width: 400px;
+    transform: translateX(4px) translateY(4px);
+  }
+}
+
+@keyframes mark_prikub-text-slide {
+  0% {
+    opacity: 0;
+    transform: translateX(175px) translateY(-60px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(175px) translateY(-80px);
+  }
+}
+
+.mark_prikub-lines-animate {
+  animation: mark_prikub-lines-draw 2s ease-in-out forwards;
+}
+
+.mark_prikub-text-animates {
+  animation: mark_prikub-text-slide 1s ease-in-out 2s forwards;
+}
+
+/* mark_prikub right*/
+
+/* mark_habl left*/
+
+@keyframes mark_habl-lines-draw {
+  0% {
+    width: 0;
+    transform: translateX(0) translateY(4px);
+  }
+
+  50% {
+    width: 0;
+    transform: translateX(0) translateY(4px);
+  }
+
+  100% {
+    width: 400px;
+    transform: translateX(-400px) translateY(4px);
+  }
+}
+
+@keyframes mark_habl-text-slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-395px) translateY(-60px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-395px) translateY(-80px);
+  }
+}
+
+.mark_habl-lines-animate {
+  animation: mark_habl-lines-draw 2s ease-in-out forwards;
+}
+
+.mark_habl-text-animates {
+  animation: mark_habl-text-slide 1s ease-in-out 2s forwards;
+}
+
+/* mark_habl left*/
+
+/* mark_abaz right*/
+
+@keyframes mark_abaz-lines-draw {
+  0% {
+    width: 0;
+    transform: translateX(4px) translateY(4px);
+  }
+
+  50% {
+    width: 0;
+    transform: translateX(4px) translateY(4px);
+  }
+
+  100% {
+    width: 600px;
+    transform: translateX(4px) translateY(4px);
+  }
+}
+
+@keyframes mark_abaz-text-slide {
+  0% {
+    opacity: 0;
+    transform: translateX(400px) translateY(-60px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(400px) translateY(-80px);
+  }
+}
+
+.mark_abaz-lines-animate {
+  animation: mark_abaz-lines-draw 2s ease-in-out forwards;
+}
+
+.mark_abaz-text-animates {
+  animation: mark_abaz-text-slide 1s ease-in-out 2s forwards;
+}
+
+/* mark_abaz right*/
+
+/* mark_nogai left*/
+
+@keyframes mark_nogai-lines-draw {
+  0% {
+    width: 0;
+    transform: translateX(0) translateY(4px);
+  }
+
+  50% {
+    width: 0;
+    transform: translateX(0) translateY(4px);
+  }
+
+  100% {
+    width: 400px;
+    transform: translateX(-400px) translateY(4px);
+  }
+}
+
+@keyframes mark_nogai-text-slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-395px) translateY(-60px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-395px) translateY(-80px);
+  }
+}
+
+.mark_nogai-lines-animate {
+  animation: mark_nogai-lines-draw 2s ease-in-out forwards;
+}
+
+.mark_nogai-text-animates {
+  animation: mark_nogai-text-slide 1s ease-in-out 2s forwards;
+}
+
+/* mark_nogai left*/
+
+/* mark_habez left*/
+
+@keyframes mark_habez-lines-draw {
+  0% {
+    width: 0;
+    transform: translateX(0) translateY(4px);
+  }
+
+  50% {
+    width: 0;
+    transform: translateX(0) translateY(4px);
+  }
+
+  100% {
+    width: 400px;
+    transform: translateX(-400px) translateY(4px);
+  }
+}
+
+@keyframes mark_habez-text-slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-395px) translateY(-60px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-395px) translateY(-80px);
+  }
+}
+
+.mark_habez-lines-animate {
+  animation: mark_habez-lines-draw 2s ease-in-out forwards;
+}
+
+.mark_habez-text-animates {
+  animation: mark_habez-text-slide 1s ease-in-out 2s forwards;
+}
+
+/* mark_habez left*/
+
+/* mark_ust right*/
+
+@keyframes mark_ust-lines-draw {
+  0% {
+    width: 0;
+    transform: translateX(4px) translateY(4px);
+  }
+
+  50% {
+    width: 0;
+    transform: translateX(4px) translateY(4px);
+  }
+
+  100% {
+    width: 600px;
+    transform: translateX(4px) translateY(4px);
+  }
+}
+
+@keyframes mark_ust-text-slide {
+  0% {
+    opacity: 0;
+    transform: translateX(325px) translateY(-60px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(325px) translateY(-80px);
+  }
+}
+
+.mark_ust-lines-animate {
+  animation: mark_ust-lines-draw 2s ease-in-out forwards;
+}
+
+.mark_ust-text-animates {
+  animation: mark_ust-text-slide 1s ease-in-out 2s forwards;
+}
+
+/* mark_ust right*/
+
+/* mark_malkar right*/
+
+@keyframes mark_malkar-lines-draw {
+  0% {
+    width: 0;
+    transform: translateX(4px) translateY(4px);
+  }
+
+  50% {
+    width: 0;
+    transform: translateX(4px) translateY(4px);
+  }
+
+  100% {
+    width: 420px;
+    transform: translateX(4px) translateY(4px);
+  }
+}
+
+@keyframes mark_malkar-text-slide {
+  0% {
+    opacity: 0;
+    transform: translateX(145px) translateY(-60px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(145px) translateY(-80px);
+  }
+}
+
+.mark_malkar-lines-animate {
+  animation: mark_malkar-lines-draw 2s ease-in-out forwards;
+}
+
+.mark_malkar-text-animates {
+  animation: mark_malkar-text-slide 1s ease-in-out 2s forwards;
+}
+
+/* mark_malkar right*/
+
+/* mark_urup left*/
+
+@keyframes mark_urup-lines-draw {
+  0% {
+    width: 0;
+    transform: translateX(0) translateY(4px);
+  }
+
+  50% {
+    width: 0;
+    transform: translateX(0) translateY(4px);
+  }
+
+  100% {
+    width: 400px;
+    transform: translateX(-400px) translateY(4px);
+  }
+}
+
+@keyframes mark_urup-text-slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-395px) translateY(-60px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-395px) translateY(-80px);
+  }
+}
+
+.mark_urup-lines-animate {
+  animation: mark_urup-lines-draw 2s ease-in-out forwards;
+}
+
+.mark_urup-text-animates {
+  animation: mark_urup-text-slide 1s ease-in-out 2s forwards;
+}
+
+/* mark_urup left*/
+
+/* mark_zelen left*/
+
+@keyframes mark_zelen-lines-draw {
+  0% {
+    width: 0;
+    transform: translateX(0) translateY(4px);
+  }
+
+  50% {
+    width: 0;
+    transform: translateX(0) translateY(4px);
+  }
+
+  100% {
+    width: 550px;
+    transform: translateX(-550px) translateY(4px);
+  }
+}
+
+@keyframes mark_zelen-text-slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-545px) translateY(-60px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-545px) translateY(-80px);
+  }
+}
+
+.mark_zelen-lines-animate {
+  animation: mark_zelen-lines-draw 2s ease-in-out forwards;
+}
+
+.mark_zelen-text-animates {
+  animation: mark_zelen-text-slide 1s ease-in-out 2s forwards;
+}
+
+/* mark_zelen left*/
+
+/* mark_karach right*/
+
+@keyframes mark_karach-lines-draw {
+  0% {
+    width: 0;
+    transform: translateX(4px) translateY(4px);
+  }
+
+  50% {
+    width: 0;
+    transform: translateX(4px) translateY(4px);
+  }
+
+  100% {
+    width: 500px;
+    transform: translateX(4px) translateY(4px);
+  }
+}
+
+@keyframes mark_karach-text-slide {
+  0% {
+    opacity: 0;
+    transform: translateX(280px) translateY(-60px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(280px) translateY(-80px);
+  }
+}
+
+.mark_karach-lines-animate {
+  animation: mark_karach-lines-draw 2s ease-in-out forwards;
+}
+
+.mark_karach-text-animates {
+  animation: mark_karach-text-slide 1s ease-in-out 2s forwards;
+}
+
+/* mark_karach right*/
+
+/* .map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  
+}
+ */
+
+.mark {
+  cursor: pointer;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.line {
+  height: 0;
+  width: 1px;
+  background: #fff;
+}
+
+.line2 {
+  width: 0;
+  height: 1px;
+  background: #fff;
+}
+
+.text {
+  position: absolute;
+  color: #fff;
+  opacity: 0;
+  display: inline-block;
+  white-space: nowrap;
+  width: 300px;
+}
+
+.animate {
+  animation: mark-slide 2s ease-in-out forwards;
+}
+
+.text-animate {
+  animation: text-slide 1s ease-in-out 2s forwards;
+}
+
+.text-animates {
+  animation: text-slides 1s ease-in-out 2s forwards;
+}
+
+.line-animate {
+  animation: line-draw 2s ease-in-out forwards;
+}
+
+.line2-animate {
+  animation: line2-draw 2s ease-in-out forwards;
+}
+
+.lines-animate {
+  animation: lines-draw 2s ease-in-out forwards;
+}
+
+.lines-animate2 {
+  animation: lines-draw2 2s ease-in-out forwards;
+}
+
+/* ------------- */
+
+/* ---------------------------------------------------------------------- */
+
+.mark_cherk {
+  top: 150px;
+  left: 540px;
+}
+
+.mark_prikub {
+  top: 110px;
+  left: 700px;
+}
+
+.mark_habl {
+  top: 80px;
+  left: 400px;
+}
+
+.mark_abaz {
+  top: 250px;
+  left: 460px;
+}
+
+.mark_nogai {
+  top: 20px;
+  left: 467px;
+}
+
+.mark_habez {
+  top: 160px;
+  left: 440px;
+}
+
+.mark_ust {
+  top: 340px;
+  left: 580px;
+}
+
+.mark_malkar {
+  top: 420px;
+  left: 720px;
+}
+
+.mark_urup {
+  top: 420px;
+  left: 120px;
+}
+
+.mark_zelen {
+  top: 540px;
+  left: 280px;
+}
+
+.mark_karach {
+  top: 550px;
+  left: 550px;
+}

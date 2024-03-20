@@ -481,12 +481,14 @@ swiper-slide img {
 }
 
 .map {
+    margin-top: 30px;
     width: 800px;
     position: relative;
 }
 
 .fil0_1 {
-    fill: #1a1f41;
+    /* fill: #1a1f41; */
+    fill: rgba(255, 255, 255, 0.4);
     /* stroke: #fff;
     stroke-width: 20px; */
     cursor: pointer;
@@ -494,5 +496,6 @@ swiper-slide img {
 }
 
 .fil0_1:hover {
-    fill: #fff;
+    fill: rgba(255, 255, 255, 0.8);
+    /* fill: #1f1f1f; */
 }
