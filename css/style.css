@@ -482,6 +482,7 @@ swiper-slide img {
 
 .map {
     width: 800px;
+    position: relative;
 }
 
 .fil0_1 {
