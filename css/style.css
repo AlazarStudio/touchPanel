@@ -142,10 +142,15 @@
 
 .descBlock_items__elem___img {
     width: 100%;
+    height: 340px;
+    border-radius: 30px;
+    overflow: hidden;
 }
 
 .descBlock_items__elem___img img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .descBlock_items__elem___title {
@@ -531,4 +536,16 @@ swiper-slide img {
     text-decoration: none;
     color: #fff;
     height: 60px;
+}
+
+.topPicture{
+    width: 100%;
+    height: 375px;
+    overflow: hidden;
+}
+
+.topPicture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
