@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выставка Верховный суд КЧР</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="backButton">
+            <a href="../index.html">
+                <img src="../ref/arrow_back.png" alt="">
+            </a>
+        </div>
+        <div class="title">
+            Государственные деятели
+        </div>
+        
+        <div class="main_info">
+            <div class="widthBlockLow">
+                <div class="descBlock_items" id="show11"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        fetch('../js/gos_deyateli.json')
+            .then(response => response.text())
+            .then(info => {
+                let data = JSON.parse(info);
+
+                for (var i = 0; i < 14; i++) {
+                    $('#show11').append(`
+                        <a href="gos_deyatel.html?id=${i}" class="descBlock_items__elem" id=${i}>
+                            <div class="gapBlock">
+                                <div class="descBlock_items__elem___img">
+                                    <img src="../ref/${data[i].picture}" alt="">
+                                </div>
+                                <div class="descBlock_items__elem___title">
+                                    ${data[i].title}
+                                </div>
+                            </div>
+                            <div class="buttonInfo">Подробнее</div>
+                        </a>
+                    `);
+                }
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    </script>
+</body>
+
+</html>

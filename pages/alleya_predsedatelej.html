@@ -78,7 +78,7 @@
 
                 for (var i = 14; i < 23; i++) {
                     $('#show9').append(`
-                        <a href="predsedatel.html?id=${i}" class="descBlock_items__elem" id=${i}>
+                        <div class="descBlock_items__elem" id=${i}>
                             <div class="gapBlock">
                                 <div class="descBlock_items__elem___img">
                                     <img src="../ref/${data[i].picture}" alt="">
@@ -93,8 +93,7 @@
                                     ${data[i].date}
                                 </div>
                             </div>
-                            <div class="buttonInfo">Подробнее</div>
-                        </a>
+                        </div>
                     `);
                 }
             })
