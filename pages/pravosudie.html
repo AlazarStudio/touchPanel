@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выставка Верховный суд КЧР</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="backButton">
+            <a href="../pages/pravosudie_v_obektive.html">
+                <img src="../ref/arrow_back.png" alt="">
+            </a>
+        </div>
+        <div class="title"></div>
+
+        <div class="main_info">
+            <div class="predsedatel"></div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="">
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const paramValue = urlParams.get('id');
+
+        fetch('../js/pravosudie.json')
+            .then(response => response.text())
+            .then(info => {
+                let data = JSON.parse(info);
+
+                let awards = data[paramValue].awards;
+                let awardsStr = '';
+
+                awards.forEach(element => {
+                    awardsStr = awardsStr + `<div class="predsedatel_left__awards___img"><img src="../ref/${element}" alt=""></div>`
+                });
+
+                let slider = data[paramValue].book;
+                let sliderStr = '';
+
+                slider.forEach(element => {
+                    sliderStr = sliderStr + `<swiper-slide><img src="../ref/${element}" alt=""></swiper-slide>`
+                });
+
+                let bookTitle = '';
+                let awardsTitle = '';
+                let sliderBlock = '';
+
+                if (awards.length > 0) {
+                    awardsTitle = `<div class="predsedatel_left__description">
+                            Награды:
+                        </div>
+                        <div class="predsedatel_left__awards">
+                            ${awardsStr}
+                        </div>`
+                }
+
+                if (slider.length > 0) {
+                    bookTitle = '<a href="#book" class="predsedatel_left__book">Книга памяти</a>';
+
+                    sliderBlock += '<div class="title">Книга памяти</div><br /><br />';
+                    sliderBlock += `
+                        <swiper-container id="book" style="height:500px" class="mySwiper" navigation="true" space-between="30" slides-per-view="3" loop="true">
+                            ${sliderStr}
+                        </swiper-container>`;
+                }
+
+
+
+                $(".predsedatel").append(`
+                    <div class="predsedatel_left">
+                        <div class="predsedatel_left__img">
+                            <img src="../ref/${data[paramValue].picture}" alt="">
+                        </div>
+                        <div class="predsedatel_left__title">${data[paramValue].title}</div>
+                        <div class="predsedatel_left__description">${data[paramValue].description}</div>
+                        ${awardsTitle}
+                        ${bookTitle}
+                    </div>
+                    <div class="predsedatel_right">
+                        ${data[paramValue].text}
+                        ${sliderBlock}
+                    </div>
+                `);
+
+
+                $('swiper-slide img').on('click', function () {
+                    var imgSrc = $(this).attr('src');
+                    $('#modalImage').attr('src', imgSrc);
+                    $('#myModal').css('display', 'flex');
+                });
+
+                $('.close').on('click', function () {
+                    $('#myModal').css('display', 'none');
+                });
+
+                $(window).on('click', function (e) {
+                    if ($(e.target).is('#myModal')) {
+                        $('#myModal').css('display', 'none');
+                    }
+                });
+            })
+            .catch(error => console.error('Error fetching data:', error));
+
+    </script>
+</body>
+
+</html>
