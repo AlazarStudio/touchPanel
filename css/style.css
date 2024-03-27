@@ -78,7 +78,7 @@
     display: flex;
     justify-content: center;
     padding: 50px;
-    z-index: 9999999999;
+    z-index: 999;
 }
 
 .backButton a {
@@ -299,7 +299,7 @@ swiper-slide img {
 .modal {
     display: none;
     position: fixed;
-    z-index: 999;
+    z-index: 99999999999;
     left: 0;
     top: 0;
     width: 100%;
@@ -456,8 +456,14 @@ swiper-slide img {
     margin: 50px auto;
     font-size: 20px;
     font-weight: 500;
-    text-align: left;
+    text-align: justify;
     color: #fff;
+    text-indent: 45px;
+    line-height: 28px;
+}
+
+.text p {
+    margin-bottom: 5px;
 }
 
 .lowerSize {
@@ -585,4 +591,77 @@ swiper-slide img {
 
 .mtn {
     margin-top: -50px !important;
+}
+
+.verhSudImg {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 1600px;
+    margin: 0 auto 100px;
+}
+
+.verhSudImg_leftBlock {
+    width: 35%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.verhSudImg_leftBlock img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.verhSudImg_rightBlock {
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.verhSudImg_rightBlock img {
+    width: 48%;
+}
+
+.fl_right{
+    float: right;
+    margin: 5px 0 5px 30px;
+    text-indent: 0;
+    width: 400px;
+}
+
+.fl_right img{
+    width: 100%;
+}
+
+.fl_right__desc{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.fl_right__desc:last-child{
+    margin-bottom: 0px;
+}
+
+.fl_left{
+    float: left;
+    margin: 5px 30px 5px 0;
+    text-indent: 0;
+    width: 400px;
+}
+
+.fl_left img{
+    width: 100%;
+}
+
+.fl_left__desc{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.fl_left__desc:last-child{
+    margin-bottom: 0px;
 }
