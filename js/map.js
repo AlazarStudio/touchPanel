@@ -62,12 +62,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setTimeout(function () {
     document
+      .querySelector(".mark_karach_gorod .line2")
+      .classList.add("mark_karach_gorod-lines-animate");
+    document
+      .querySelector(".mark_karach_gorod .text")
+      .classList.add("mark_karach_gorod-text-animates");
+  }, 800);
+
+  setTimeout(function () {
+    document
       .querySelector(".mark_malkar .line2")
       .classList.add("mark_malkar-lines-animate");
     document
       .querySelector(".mark_malkar .text")
       .classList.add("mark_malkar-text-animates");
-  }, 800);
+  }, 900);
 
   setTimeout(function () {
     document
@@ -76,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document
       .querySelector(".mark_urup .text")
       .classList.add("mark_urup-text-animates");
-  }, 900);
+  }, 1000);
 
   setTimeout(function () {
     document
@@ -85,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document
       .querySelector(".mark_zelen .text")
       .classList.add("mark_zelen-text-animates");
-  }, 1000);
+  }, 1100);
 
   setTimeout(function () {
     document
@@ -94,5 +103,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document
       .querySelector(".mark_karach .text")
       .classList.add("mark_karach-text-animates");
-  }, 1100);
+  }, 1200);
+
 });

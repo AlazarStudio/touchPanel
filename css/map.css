@@ -487,6 +487,48 @@
 
 /* mark_karach right*/
 
+/* mark_karach_gorod right*/
+
+@keyframes mark_karach_gorod-lines-draw {
+  0% {
+    width: 0;
+    transform: translateX(4px) translateY(4px);
+  }
+
+  50% {
+    width: 0;
+    transform: translateX(4px) translateY(4px);
+  }
+
+  100% {
+    width: 500px;
+    transform: translateX(4px) translateY(4px);
+  }
+}
+
+@keyframes mark_karach_gorod-text-slide {
+  0% {
+    opacity: 0;
+    transform: translateX(355px) translateY(-60px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(355px) translateY(-80px);
+  }
+}
+
+.mark_karach_gorod-lines-animate {
+  animation: mark_karach_gorod-lines-draw 2s ease-in-out forwards;
+}
+
+.mark_karach_gorod-text-animates {
+  animation: mark_karach_gorod-text-slide 1s ease-in-out 2s forwards;
+}
+
+/* mark_karach_gorod right*/
+
+
 /* .map {
     display: flex;
     align-items: center;
@@ -524,6 +566,7 @@
   display: inline-block;
   white-space: nowrap;
   width: 300px;
+  text-indent: 0;
 }
 
 .animate {
@@ -589,12 +632,12 @@
 }
 
 .mark_ust {
-  top: 340px;
+  top: 320px;
   left: 580px;
 }
 
 .mark_malkar {
-  top: 420px;
+  top: 440px;
   left: 720px;
 }
 
@@ -611,4 +654,9 @@
 .mark_karach {
   top: 550px;
   left: 550px;
+}
+
+.mark_karach_gorod {
+  top: 380px;
+  left: 480px;
 }
