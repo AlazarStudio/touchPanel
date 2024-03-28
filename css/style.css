@@ -617,8 +617,6 @@ swiper-slide img {
 
 .verhSudImg_leftBlock {
     width: 35%;
-    border-radius: 30px;
-    overflow: hidden;
 }
 
 .verhSudImg_leftBlock img {
@@ -632,10 +630,13 @@ swiper-slide img {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    border-radius: 30px;
+    overflow: hidden;
 }
 
 .verhSudImg_rightBlock img {
     width: 48%;
+    border-radius: 30px;
 }
 
 .fl_right{
@@ -688,5 +689,6 @@ swiper-slide img {
 }
 
 .centerImgBlock img {
-    width: 50%;
+    height: 350px;
+    border-radius: 30px;
 }
