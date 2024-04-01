@@ -284,6 +284,10 @@
         ],
         "predsedatels": [
             {
+                "title": "Абреков Магомет Маджитович",
+                "picture": "reg-12-pred-5.jpg"
+            },
+            {
                 "title": "Кочкаров Яков Хусеинович",
                 "picture": "reg-12-pred-1.jpeg"
             },
@@ -296,8 +300,8 @@
                 "picture": "reg-12-pred-4.jpg"
             },
             {
-                "title": "Абреков Магомет Маджитович",
-                "picture": "reg-12-pred-5.jpg"
+                "title": "Кочкаров Оскар Робертович",
+                "picture": "reg-12-pred-2.jpg"
             }
         ]
     }
