@@ -11,12 +11,12 @@
         ],
         "predsedatels": [
             {
-                "title": "Лепшоков Науруз Абрекович",
-                "picture": "reg_pred_1.png"
-            },
-            {
                 "title": "Жолудев Иван Степанович",
                 "picture": "reg_pred_2.png"
+            },
+            {
+                "title": "Супрунов Виктор Михайлович",
+                "picture": "reg_pred_5.png"
             },
             {
                 "title": "Бадалов Илгар Намазович",
@@ -27,8 +27,8 @@
                 "picture": "reg_pred_4.png"
             },
             {
-                "title": "Супрунов Виктор Михайлович",
-                "picture": "reg_pred_5.png"
+                "title": "Лепшоков Науруз Абрекович",
+                "picture": "reg_pred_1.png"
             }
         ]
     },
